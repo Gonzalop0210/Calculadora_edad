@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 32px;
+}
+
+:root {
+  --color_purple: hsl(259, 100%, 65%);
+  --color_ligth_red: hsl(0, 100%, 67%);
+  --color_white: hsl(0, 0%, 100%);
+  --color_off_white: hsl(0, 0%, 94%);
+  --color_ligth_grey: hsl(0, 0%, 86%);
+  --color_smokey_grey: hsl(0, 1%, 44%);
+  --color_off_black: hsl(0, 0%, 8%);
+  --font_poppins: 'Poppins', sans-serif;
+}
