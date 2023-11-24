@@ -11,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <article class="container-total">
-    <div class="container-top">
+  <div class="container">
+    <article class="container-top">
       <div class="container-top__item">
         <span class="name-fecha">DAY</span>
         <input type="text" class="number-fecha">
@@ -25,10 +25,26 @@
         <span class="name-fecha">YEAR</span>
         <input type="text" class="number-fecha">
       </div>
-    </div>
-  </article>
-  <article class="container-icon">
-    <img src="assets/images/icon-arrow.svg" alt="icono flecha">
-  </article>
+    </article>
+    <article class="container-icon">
+      <div class="background-icon">
+        <img class="icono" src="assets/images/icon-arrow.svg" alt="icono flecha">
+      </div>
+    </article>
+    <article class="container-resultado">
+      <div class="item-resultado">
+        <span class="numero-resultado">--</span>
+        <span class="nombre-resultado">years</span>
+      </div>
+      <div class="item-resultado">
+        <span class="numero-resultado">--</span>
+        <span class="nombre-resultado">months</span>
+      </div>
+      <div class="item-resultado">
+        <span class="numero-resultado">--</span>
+        <span class="nombre-resultado">days</span>
+      </div>
+    </article>
+  </div>
 </body>
 </html>
