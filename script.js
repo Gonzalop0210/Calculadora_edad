@@ -9,11 +9,23 @@ const imprimir_day = document.querySelector('.numero-resultado-day')
 const fechaActual = new Date()
 
 icono_boton.addEventListener('click', ()=>{
-  const value_day = input_day.value
-  const value_month = input_month.value
-  const value_year = input_year.value
+  const value_day = Number(input_day.value)
+  const value_month = Number(input_month.value)
+  const value_year = Number(input_year.value)
 
-  imprimir_month.innerText = value_month
-  imprimir_day.innerText = value_day
-  imprimir_year.innerText = value_year
+  let edad = fechaActual.getFullYear() - value_year
+  let meses = (fechaActual.getMonth() + 1) - value_month
+  let dias = fechaActual.getDate() - value_day
+
+  if (meses < 0) {
+    edad--
+    meses = fechaActual.getMonth() + 1
+  }
+  if (dias < 0) {
+    dias = value_day - fechaActual.getDate()
+  }
+
+  imprimir_year.innerText = edad
+  imprimir_month.innerText = meses
+  imprimir_day.innerText = dias
 })
